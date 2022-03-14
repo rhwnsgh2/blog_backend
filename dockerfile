@@ -3,6 +3,8 @@ From node:latest
 WORKDIR /app
 
 COPY package*.json /app/
+COPY ./dist /app/
+COPY . /app/
 
 RUN npm install
 
