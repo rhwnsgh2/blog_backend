@@ -30,15 +30,3 @@ app.listen('1234', () => {
   ################################################
 `);
 });
-
-export interface CookieOptions {
-  maxAge?: number | undefined;
-  signed?: boolean | undefined;
-  expires?: Date | undefined;
-  httpOnly?: boolean | undefined;
-  path?: string | undefined;
-  domain?: string | undefined;
-  secure?: boolean | undefined;
-  encode?: ((val: string) => string) | undefined;
-  sameSite?: boolean | 'lax' | 'strict' | 'none' | undefined;
-}
